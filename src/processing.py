@@ -1,4 +1,5 @@
-from typing import List, Dict
+from typing import Dict, List
+
 
 def filter_by_state(
     transactions: List[Dict],
@@ -21,3 +22,4 @@ def sort_by_date(
     Сортирует список транзакций по дате (ключ 'date') в порядке убывания или возрастания.
     """
     return sorted(transactions, key=lambda x: x.get('date', ''), reverse=reverse)
+
