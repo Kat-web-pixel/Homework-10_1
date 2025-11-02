@@ -1,5 +1,6 @@
 from typing import Dict, List
 
+
 def filter_by_state(
     transactions: List[Dict],
     state: str = 'EXECUTED'
@@ -12,6 +13,7 @@ def filter_by_state(
         if transaction.get('state') == state:
             filtered.append(transaction)
     return filtered
+
 
 def sort_by_date(
     transactions: List[Dict],
